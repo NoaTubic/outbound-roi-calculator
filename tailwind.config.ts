@@ -9,8 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brand: {
+          bg: "var(--bg)",
+          card: "var(--card)",
+          "card-hover": "var(--card-hover)",
+          border: "var(--border)",
+          "border-light": "var(--border-light)",
+          accent: "var(--accent)",
+          "accent-hover": "var(--accent-hover)",
+        },
+      },
+      fontFamily: {
+        sans: ["var(--font-instrument)", "system-ui", "sans-serif"],
+        mono: ["var(--font-jetbrains)", "monospace"],
       },
     },
   },
